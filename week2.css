@@ -1,0 +1,10 @@
+body {
+  background-color: navajowhite;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+.example {
+  border: solid;
+  background-color: floralwhite;
+}
