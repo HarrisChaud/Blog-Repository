@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="week5.css" />
+    <title>Week 5</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <h1>Week 5 Blog</h1>
+    <p>
+      This week I read about react js and the concepts that are important to
+      master so that it is easier to understand react js. The first important
+      concept to master is how react components work. This is important since
+      everything in react is an component. A good example of a component is the
+      common &ltselect&gt component. A React component simply outputs HTML like
+      a traditional template would, but also includes the code. The most common
+      way to write components is
+    </p>
+    <div class="Example">
+      <p><strong>Example:</strong></p>
+      <p>class MyComponent extends React.Component {</p>
+      <p>render() { return Hello World! &ltp&gt</p>
+      <p>}</p>
+    </div>
+    <p>
+      Props and State are another concept that is crucial to start coding in
+      react Prop components are short for properties. Props are the reason
+      components can communicate with each other.
+    </p>
+    <div class="Example">
+      <p><strong>Example:</strong></p>
+      <p>class ChildComponent extends React.Component {</p>
+      <p>
+        render() { return &ltp&gt And then I said,
+        “{this.props.message}”&ltp&gt; }
+      </p>
+      <p>}</p>
+    </div>
+    <p>
+      This also means data can only go from parent componenets to their
+      children, no children to the parent. Sometimes a component comes fronm the
+      state, its a temporary user input. inside the component state is managed
+      using the setState function.
+    </p>
+    <p>
+      React is much more about actually mastering programming and architectural
+      concepts rather than actually having to learn API methods. Though Another
+      useful component is the constructor which can be used to initialize your
+      state and the bind methods.
+    </p>
+    <a
+      href="https://www.freecodecamp.org/news/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3/"
+      >Link to the source used</a
+    >
+  </body>
+</html>
