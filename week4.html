@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="week4.css" />
+    <title>Blog 4</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <h1>Week 4 Blog</h1>
+    <p>
+      This week I got a chance to learn about the best practices that are used
+      in modern javascript. Javascript allows the user to declare variables in
+      many different ways, but not every way may be valid compared to others for
+      example using <strong>var</strong> to declare variables. This way of
+      declaring variables have been used since the inception of javascript, but
+      it comes with many setbacks such as not being able to have block scored
+      definitions. Since the variables defined by <strong>var</strong> are not
+      block-scoped, redefining them in a narrower scope affects the value of the
+      outer scope. In modern Javacript most developers now use
+      <strong>let</strong> and <strong>const</strong> to declare variables,
+      these differ from <strong>var</strong>, for example you cannot reassign
+      <strong>const</strong> variables.
+    </p>
+    <div class="Example">
+      <p><strong>Example:</strong></p>
+      <p>let y = 10</p>
+
+      <p>if (true) {</p>
+      <p>let y = 15 // inner declaration is scoped within the if block</p>
+      <p>console.log(y) // prints 15</p>
+      <p>}</p>
+    </div>
+    <p>
+      Javascript also allows the user to create arrow functions, which have
+      advantages over regular functions. One of the advanatages of arrow
+      functions is that they exist within the parent functions, this helps us by
+      removing a lot of conflicts when we are using the
+      <strong>this</strong> keyword. for a single expression inside the arrow
+      functions it's implied we don't have scope brackets
+      <strong>{}</strong> and no return
+      <strong>keyword</strong>
+    </p>
+    <div class="Example">
+      <p><strong>Example:</strong></p>
+      <p>let y = [2, 4, 6, 8]</p>
+      <p>y.map(val => val * 2) //[4, 8, 12, 16]</p>
+    </div>
+    <p>
+      Javascript provides us with the null-ish coalescing operator
+      <strong>??</strong>
+      if you want to assign a value to a variable if and only if the value is
+      currently null-ish. A logical way to write this would be:
+    </p>
+    <div class="Example">
+      <p><strong>Example:</strong></p>
+      <p>if (x === null) {</p>
+      <p>x = y</p>
+      <p>}</p>
+      <p>Instead we can do this:</p>
+      <p>// x = y if x is nullish, else no effect</p>
+      <p>x ??= y</p>
+    </div>
+    <p>
+      This operator along with the logical AND <strong>&&=</strong> and logical
+      OR <strong>||=</strong> make our code a lot easier and cleaner to look at.
+      Learning these new javascript techniques makes coding easier in
+      javascript.
+    </p>
+  </body>
+</html>
